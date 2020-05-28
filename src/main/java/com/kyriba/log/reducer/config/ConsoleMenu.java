@@ -49,7 +49,7 @@ public class ConsoleMenu {
                 ? null
                 : Pattern.compile(pattern));
 
-        System.out.println("Please, enter comma-separated parameters for grouping:");
+        System.out.println("Please, enter comma-separated parameters for grouping (username, hour, day, month):");
         config.getGroupParams().addAll(convertToGroupParams(scanner.nextLine()));
 
         System.out.println("Please, enter path of logs directory:");
